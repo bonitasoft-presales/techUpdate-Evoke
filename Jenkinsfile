@@ -24,7 +24,7 @@ node("bcd-${bonitaVersionShortened}") {
 
     // set to true/false if bonitaConfiguration requires a .bconf file
     // e.g. configuration has parameters
-    def useBConf = true
+    def useBConf = false
 
     // set to true/false to switch verbose mode
     def debugMode = false	
