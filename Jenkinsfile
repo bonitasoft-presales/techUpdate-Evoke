@@ -24,7 +24,7 @@ node("bcd-${bonitaVersionShortened}") {
 
     // set to true/false if bonitaConfiguration requires a .bconf file
     // e.g. configuration has parameters
-    def useBConf = true
+    def useBConf = false
 
     // set to true/false to switch verbose mode
     def debugMode = false	
@@ -80,7 +80,8 @@ node("bcd-${bonitaVersionShortened}") {
         }
 
         stage('Archive') {
-            archiveArtifacts artifacts: "target/*.zip, target/*.bconf, target/*.xml, target/*.bar", fingerprint: true, flatten:true
+        	// archiveArtifacts artifacts: "target/*.zip, target/*.bconf, target/*.xml, target/*.bar", fingerprint: true, flatten:true
+            archiveArtifacts artifacts: "target/*.zip", fingerprint: true, flatten:true
         }
     } // credentials
   	} // timestamps
