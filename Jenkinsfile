@@ -80,7 +80,8 @@ node("bcd-${bonitaVersionShortened}") {
         }
 
         stage('Archive') {
-            archiveArtifacts artifacts: "target/*.zip, target/*.bconf, target/*.xml, target/*.bar", fingerprint: true, flatten:true
+        	// archiveArtifacts artifacts: "target/*.zip, target/*.bconf, target/*.xml, target/*.bar", fingerprint: true, flatten:true
+            archiveArtifacts artifacts: "target/*.zip", fingerprint: true, flatten:true
         }
     } // credentials
   	} // timestamps
