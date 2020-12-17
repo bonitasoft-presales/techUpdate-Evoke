@@ -9,7 +9,7 @@
     <description>Template of an ACM REST API Extension. To be completed according the case</description>
     
     <properties>
-        <bonita.version>7.11.1</bonita.version>
+        <bonita.version>7.11.4</bonita.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
